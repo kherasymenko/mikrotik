@@ -1,0 +1,29 @@
+# List of commands for git
+
+cd mikrotik/
+python3 config.py 
+ssh admin+ct@192.168.88.1
+python3 config.py 
+ls -l
+less BackUp-Config-Mikrotik-Netmiko.txt 
+git config --global user.name "kherasymenko"
+git config --global user.email k.herasymenko@edu-cisco.org
+git config --list
+git init
+git status
+git add BackUp-Config-Mikrotik-Netmiko.txt 
+git status
+git commit -m "Add backup config"
+git log
+python3 config.py 
+git status
+git commit -a -m "update backup config"
+git log
+git diff  3a26bde c36934c
+#git remote rm origin
+git remote add origin https://kherasymenko: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@github.com/kherasymenko/mikrotik.git
+git remote --verbose
+git push origin
+git push origin master
+history | sed -r "s/^\s+[0-9]+\s+//g" > git-command.txt 
+
